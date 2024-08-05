@@ -1,5 +1,5 @@
 # WappBoomber
-Simple whatsapp boomber usign python selenium.
+Simple whatsapp boomber using python selenium.
 
 ## Installation
 
