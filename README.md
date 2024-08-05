@@ -7,6 +7,7 @@ Simple whatsapp boomber using python selenium.
 pip install selenium
 ```
 I'm using kitty terminal, and the command ```kitten icat``` to display th QR code, you can use any other image viewer if you want.
+
 Also you need to have Firefox installed.
 
 ## Usage
