@@ -1,4 +1,4 @@
-# WappBoomber
+# WhatsappBoomber
 Simple whatsapp boomber using python selenium.
 As whatsapp web change, the code will change.
 
