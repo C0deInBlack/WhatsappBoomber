@@ -15,8 +15,8 @@ I'm using kitty terminal, and the command ```kitten icat``` to display th QR cod
 ## Usage
 
 ```bash
-        [?] usage:
-                main_playwright.py <phone number with country code> <number of messages> <message>
+[?] usage:
+        main_playwright.py <phone number with country code> <number of messages> <message>
 ```
 
 ## Note
