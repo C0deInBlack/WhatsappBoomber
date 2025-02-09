@@ -21,7 +21,7 @@ I'm using kitty terminal, and the command ```kitten icat``` to display th QR cod
 
 ## Note
 
-If there is an error, probably need to update the selector of the textbox, because whatsappp web is constantly updating.
-In general Playwright version is faster at handling when an element is available, and Selenium send the keys faster than Playwright.
-There is a difference between 10 seconds, being Playwright faster in general, I prefer the Playwright version because automatically manages the times.
+If there is an error, probably need to update the selector of the textbox, because whatsappp web is constantly updating. \
+In general Playwright version is faster at handling when an element is available, and Selenium send the keys faster than Playwright. \
+There is a difference between 10 seconds, being Playwright faster in general, I prefer the Playwright version because automatically manages the times. \
 These test were tested on my machine, maybe on yours the behavior of the script is a little different and depending on your network connection.
