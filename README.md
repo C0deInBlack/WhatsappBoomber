@@ -11,6 +11,15 @@ playwright install
 ```
 I'm using kitty terminal, and the command ```kitten icat``` to display th QR code, you can use any other image viewer or command if you want.
 
+For example in the page [example](https://www.delftstack.com/howto/python/python-display-image/) show how to open the image with the default image viewer in your system
+```python
+from PIL import Image
+
+img = Image.open('path_to_your_image.jpg')
+img.show()
+```
+But it's weird, I just prefer to see the image in the terminal with kitty.
+
 ## Usage
 
 ```bash
