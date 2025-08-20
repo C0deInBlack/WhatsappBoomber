@@ -1,13 +1,12 @@
 # WhatsappBoomber
-A Python script that sends bulk messages to a WhatsApp number using two different methods: Selenium and Playwright.
+A Python script that sends bulk messages to a WhatsApp number.
 
 ## Installation
 
 ```bash
 python -m venv libs
 source libs/bin/activate
-pip install selenium
-pip install playwright
+pip install -r requirements.txt
 playwright install
 ```
 I'm using kitty terminal, and the command ```kitten icat``` to display th QR code, you can use any other image viewer or command if you want.
@@ -15,13 +14,49 @@ I'm using kitty terminal, and the command ```kitten icat``` to display th QR cod
 ## Usage
 
 ```bash
-[?] usage:
-        main_playwright.py <phone number with country code> <number of messages> <message>
+./boomber.py
+usage: boomber.py [-h] [-p PHONE] [-t TARGET] [-n NUMBER] [-m MESSAGE] [-qr QR] [-c CODE]
+
+Whatsapp Boomber
+
+options:
+  -h, --help            show this help message and exit
+  -p, --phone PHONE     Your phone number with country code
+  -t, --target TARGET   Target phone with country code
+  -n, --number NUMBER   Number of messages
+  -m, --message MESSAGE
+                        Message to send
+  -qr, --qr QR          Login using QR [true/false, Default false]
+  -c, --code CODE       Login using Code [true/false, Default false]
 ```
+
+You can use QR or a code to login your account. \
+
+
+Using QR
+```bash
+./boomber.py -p $NUMBER -t $NUMBER -n 30 -m 'python boomber' -qr true
+```
+
+In your terminal should apper the QR to scan 
+
+![img](https://github.com/C0deInBlack/WhatsappBoomber/blob/main/images/qr.cleaned.png)
+
+Using code
+```bash
+./boomber.py -p $NUMBER -t $NUMBER -n 30 -m 'python boomber' -c true
+```
+
+You will receive a message in your phone, then enter the code showed in the terminal 
+
+![img](https://github.com/C0deInBlack/WhatsappBoomber/blob/main/images/code.cleaned.png)
+
+Obviously that's not my phone, it's from some African guy who tried to scam me, so I don't care.
+
+In both cases, the boomber will the effective 
+
+![img](https://github.com/C0deInBlack/WhatsappBoomber/blob/main/images/boomber.cleaned.png)
 
 ## Note
 
-If there is an error, probably need to update the selector of the textbox, because whatsappp web is constantly updating. \
-In general Playwright version is faster at handling when an element is available, and Selenium send the keys faster than Playwright. \
-There is a difference between 10 seconds, being Playwright faster in general, I prefer the Playwright version because automatically manages the times. \
-These test were tested on my machine, maybe on yours the behavior of the script is a little different and depending on your network connection.
+If there is an error, probably need to update the selector of the textbox, because whatsappp web is constantly updating. 
