@@ -39,7 +39,7 @@ options:
   -c, --code CODE       Login using Code [true/false, Default false]
 ```
 
-You can use QR or a code to login your account. \
+You can use QR or a code to login your account.
 
 
 Using QR
