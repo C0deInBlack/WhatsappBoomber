@@ -47,7 +47,7 @@ Using QR
 ./boomber.py -p $NUMBER -t $NUMBER -n 30 -m 'python boomber' -qr true
 ```
 
-In your terminal should apper the QR to scan 
+In your terminal should appear the QR to scan 
 
 ![img](https://github.com/C0deInBlack/WhatsappBoomber/blob/main/images/qr.cleaned.png)
 
@@ -62,7 +62,7 @@ You will receive a message in your phone, then enter the code showed in the term
 
 Obviously that's not my phone, it's from some African guy who tried to scam me, so I don't care.
 
-In both cases, the boomber will the effective 
+In both cases, the boomber will be effective 
 
 ![img](https://github.com/C0deInBlack/WhatsappBoomber/blob/main/images/boomber.cleaned.png)
 
